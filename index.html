@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CostoDev App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles (1).css"/>
+</head>
+<body>
+
+  <!-- Navbar principal -->
+  <nav class="navbar">
+    <a class="navbar-logo" href="#">
+      <i class="fa-solid fa-chart-line"></i>
+      SoftEstimate
+    </a>
+    <div class="navbar-links">
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de</a>
+      <a href="#">Contacto</a>
+      <a href="#" class="btn-login">Iniciar Sesión</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Estime el Costo de su<br>Proyecto de Software<br>al Instante.</h1>
+      <p>Obtenga una previsión precisa y transparente para impulsar su desarrollo digital.</p>
+      <a href="#wizard" class="btn-primary">Comenzar</a>
+    </div>
+    <div class="hero-image">
+      <img src="calculadora.png" alt="Calculadora de costos"/>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="benefits">
+    <h2>Beneficios Clave</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <i class="fa-solid fa-gear"></i>
+        <h3>Precisión Inigualable:</h3>
+        <p>Algoritmos avanzados para cálculos exactos.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fa-regular fa-clock"></i>
+        <h3>Resultados Rápidos:</h3>
+        <p>Ahorre tiempo con estimaciones en minutos.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fa-regular fa-shield"></i>
+        <h3>Transparencia Total:</h3>
+        <p>Sin costos ocultos, desglose detallado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 CostoDev App. Todos los derechos reservados.</p>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Características</a>
+      <a href="#">Precios</a>
+      <a href="#">Contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+    </nav>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       WIZARD — navegación con :target
+  ══════════════════════════════════ -->
+
+  <!-- Paso 1 -->
+  <div class="wizard-overlay" id="wizard">
+    <nav class="wizard-nav">
+      <a class="navbar-logo" href="#">
+        <i class="fa-solid fa-chart-line"></i>
+        SoftEstimate
+      </a>
+      <div class="navbar-links">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="btn-login">Iniciar Sesión</a>
+      </div>
+    </nav>
+
+    <div class="wizard-box">
+
+      <p class="step-label"><strong>Paso 1 de 3:</strong> Selección de Plataforma</p>
+      <div class="step-track">
+        <div class="step-dot active"></div>
+        <div class="step-line"></div>
+        <div class="step-dot"></div>
+        <div class="step-line"></div>
+        <div class="step-dot"></div>
+      </div>
+
+      <h2>¿Qué plataforma necesitas?</h2>
+
+      <div class="platform-grid">
+
+        <label class="platform-card">
+          <input type="checkbox" name="plataforma" value="ios"/>
+          <div class="check"><i class="fa-solid fa-check"></i></div>
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="#334155">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <h3>iOS</h3>
+          <p>Aplicaciones para iPhone y iPad.</p>
+        </label>
+
+        <label class="platform-card">
+          <input type="checkbox" name="plataforma" value="android"/>
+          <div class="check"><i class="fa-solid fa-check"></i></div>
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="#334155">
+            <path d="M17.523 15.341a.95.95 0 1 1-.002-1.9.95.95 0 0 1 .002 1.9m-11.046 0a.95.95 0 1 1-.002-1.9.95.95 0 0 1 .002 1.9m11.405-6.023l1.896-3.285a.394.394 0 0 0-.144-.538.394.394 0 0 0-.538.145L17.18 8.903C15.88 8.307 14.48 7.97 13 7.97c-1.48 0-2.88.337-4.18.933L6.904 5.64a.394.394 0 0 0-.538-.145.394.394 0 0 0-.144.538l1.896 3.285C5.66 10.735 4.25 13.019 4 15.6h16c-.25-2.581-1.66-4.865-4.118-6.282"/>
+          </svg>
+          <h3>Android</h3>
+          <p>Aplicaciones para dispositivos Android.</p>
+        </label>
+
+        <label class="platform-card">
+          <input type="checkbox" name="plataforma" value="web"/>
+          <div class="check"><i class="fa-solid fa-check"></i></div>
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.6">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3c-2.4 2.8-3.8 5.7-3.8 9s1.4 6.2 3.8 9"/>
+            <path d="M12 3c2.4 2.8 3.8 5.7 3.8 9s-1.4 6.2-3.8 9"/>
+            <path d="M3 12h18M3.6 8h16.8M3.6 16h16.8"/>
+          </svg>
+          <h3>Web</h3>
+          <p>Aplicaciones y sitios web accesibles.</p>
+        </label>
+
+      </div>
+
+      <div class="wizard-actions">
+        <a href="#" class="btn-prev btn-disabled">Anterior</a>
+        <a href="#paso2" class="btn-next">Siguiente</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Paso 2 -->
+  <div class="wizard-overlay" id="paso2">
+    <nav class="wizard-nav">
+      <a class="navbar-logo" href="#">
+        <i class="fa-solid fa-chart-line"></i>
+        SoftEstimate
+      </a>
+      <div class="navbar-links">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="btn-login">Iniciar Sesión</a>
+      </div>
+    </nav>
+
+    <div class="wizard-box">
+
+      <h2 class="paso2-titulo">Paso 2: Resumen y Contacto</h2>
+
+      <div class="paso2-track">
+        <div class="p2-dot done"><i class="fa-solid fa-check"></i></div>
+        <div class="p2-line done"></div>
+        <div class="p2-dot active">2</div>
+        <div class="p2-line"></div>
+        <div class="p2-dot"></div>
+        <span class="p2-label">2. Contacto</span>
+      </div>
+
+      <p class="paso2-sub">¡Casi listo! Envíanos tus detalles para recibir una estimación personalizada.</p>
+
+      <div class="paso2-body">
+
+        <form class="contacto-form-box" action="#paso3" method="get">
+          <h3>Formulario de Contacto</h3>
+
+          <div class="campo">
+            <label>Nombre Completo <span class="req">*</span></label>
+            <input type="text" name="nombre" placeholder="Ej: Ana García" required/>
+            <span class="error-msg">Este campo es obligatorio.</span>
+          </div>
+
+          <div class="campo">
+            <label>Correo Electrónico <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="Ej: ana.garcia@email.com" required/>
+            <span class="error-msg">Ingresa un correo válido.</span>
+          </div>
+
+          <div class="campo">
+            <label>Mensaje (Opcional)</label>
+            <textarea name="mensaje" placeholder="Describe tu proyecto brevemente..."></textarea>
+          </div>
+
+          <div class="form-footer">
+            <a href="#wizard" class="btn-prev">Atrás</a>
+            <button type="submit" class="btn-next">Siguiente</button>
+          </div>
+        </form>
+
+        <div class="recursos-box">
+          <h3>Recursos Educativos</h3>
+          <div class="recurso-item">
+            <div class="recurso-icon">📚</div>
+            <span>Guía: Cómo Estimar Proyectos de Software</span>
+          </div>
+          <div class="recurso-item">
+            <div class="recurso-icon">📄</div>
+            <span>Artículo: Factores Clave en el Costo de Desarrollo</span>
+          </div>
+          <div class="recurso-item">
+            <div class="recurso-icon">🎥</div>
+            <span>Webinar: Mejores Prácticas de Estimación</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Paso 3 -->
+  <div class="wizard-overlay" id="paso3">
+    <nav class="wizard-nav">
+      <a class="navbar-logo" href="#">
+        <i class="fa-solid fa-chart-line"></i>
+        SoftEstimate
+      </a>
+      <div class="navbar-links">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+        <a href="#" class="btn-login">Iniciar Sesión</a>
+      </div>
+    </nav>
+
+    <div class="wizard-box">
+
+      <h2 class="paso3-titulo">Simulated Software Development Cost Breakdown</h2>
+      <p class="paso3-total">Total Estimated Cost: <strong>$125,000</strong></p>
+
+      <div class="breakdown-cards">
+        <div class="bcard" style="background:linear-gradient(135deg,#6366f1,#06b6d4)">
+          <div class="bcard-label">Design: $20,000 (16%)</div>
+          <div class="bcard-bar-bg">
+            <div class="bcard-bar-fill" style="width:16%">16%</div>
+          </div>
+        </div>
+        <div class="bcard" style="background:linear-gradient(135deg,#8b5cf6,#f97316)">
+          <div class="bcard-label">Frontend Dev: $45,000 (36%)</div>
+          <div class="bcard-bar-bg">
+            <div class="bcard-bar-fill" style="width:36%">36%</div>
+          </div>
+        </div>
+        <div class="bcard" style="background:linear-gradient(135deg,#7c3aed,#f97316)">
+          <div class="bcard-label">Backend Dev: $40,000 (32%)</div>
+          <div class="bcard-bar-bg">
+            <div class="bcard-bar-fill" style="width:32%">32%</div>
+          </div>
+        </div>
+        <div class="bcard" style="background:linear-gradient(135deg,#a855f7,#ec4899)">
+          <div class="bcard-label">Testing &amp; QA: $20,000 (16%)</div>
+          <div class="bcard-bar-bg">
+            <div class="bcard-bar-fill" style="width:16%">16%</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="breakdown-table-title">Detailed Cost Breakdown</h3>
+      <div class="breakdown-table-wrap">
+        <table class="breakdown-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Hours</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Design</td>
+              <td>UX/UI, Wireframing, Prototyping</td>
+              <td>160</td>
+              <td>$20,000</td>
+            </tr>
+            <tr>
+              <td>Frontend</td>
+              <td>React, HTML/CSS, Responsive</td>
+              <td>360</td>
+              <td>$45,000</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Node.js, Database, API</td>
+              <td>320</td>
+              <td>$40,000</td>
+            </tr>
+            <tr>
+              <td>Testing</td>
+              <td>Manual &amp; Automated Testing</td>
+              <td>160</td>
+              <td>$20,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="wizard-actions" style="margin-top:24px;">
+        <a href="#paso2" class="btn-prev">Atrás</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
