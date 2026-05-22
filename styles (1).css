@@ -600,6 +600,57 @@ footer nav a:hover { color: #2563eb; }
 .breakdown-table tbody tr:last-child td { border-bottom: none; }
 .breakdown-table tbody tr:hover { background: #f8fafc; }
 
+.item-list li:nth-child(1) {
+background-color: #06b6d4;
+}
+.item-list li:nth-child(2) {
+  background-color: greenyellow;
+  }
+  .item-list li:nth-child(3) {
+    background-color: #06b6d4;
+    }
+    .item-list li:nth-child(4) {
+      background-color: greenyellow
+      }
+.item-list li:nth-child(5) {
+  background-color: #06b6d4;
+  }
+  .item-list li:nth-child(6) {
+    background-color: greenyellow;
+    }
+  .item-lists li:nth-child(1){
+  background-color: orange;
+  }
+  .item-lists li:nth-child(2){
+    background-color: green;
+    }
+    .item-lists li:nth-child(3){
+      background-color: orange;
+      }
+      .item-lists li:nth-child(4){
+        background-color:green;
+        }
+        .item-lists li:nth-child(5){
+          background-color: orange;
+          }
+          .item-lists li:nth-child(6){
+            background-color: green;
+            }
+.item-list li:first-child{
+  border-radius: 8px;
+}
+.item-lists li:last-child{
+  border-radius: 8px;
+}
+.lists{
+  display:flex;
+  gap: 2rem;
+}
+
+.price-list li::before{
+content: "$";
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .navbar { padding: 14px 20px; }
